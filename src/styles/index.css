@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 body {
@@ -14,6 +15,30 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(107, 107, 248);
+    /*
     background-size: 100% 100%;
+    background-repeat: no-repeat;*/
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22, 21, 21, 0.6);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.main-container > h1 {
+    font-size:70px;
+    margin-bottom: 20px;
+}
+
+.main-container > p {
+    font-size: 45px;
+    font-style: italic;
 }
