@@ -155,3 +155,42 @@ a:hover {
     height: auto;
     max-width: 100%;
 }
+
+.drinks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(22, 21, 21, 0.6);
+}
+
+.drinks-container .item-div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.drinks-container .item-div .img-container {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 250px;
+}
+
+.drinks-container .item-div .img-container img{
+    height: 100%;
+    width: 80%;
+}
+
+
+.drinks-container .item-div .item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    font-size: 30px;
+}
