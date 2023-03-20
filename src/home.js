@@ -8,6 +8,7 @@ const homeFunction = () => {
     // Call navFunction to set the navbar at the top of the page
     navFunction();
 
+    // Clear the previous content on the page to load the home page content
     clearFunction();
 
     // Get the content container from the HTML page & set the background image
