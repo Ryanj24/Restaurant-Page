@@ -24,7 +24,7 @@ const navFunction = () => {
 
     // Create array of the links to different pages
     let navitems = ['Home', 'About', 'Menu', "Contact"];
-    let pageFunctions = ['homeFunction()', 'aboutFunction()', 'menuFunction()', 'contactFunction()'];
+    let list = ['home', 'about', 'menu', 'contact'];
 
     // Create the ul element that will house the nav links
     const navlist = document.createElement('ul');
@@ -39,7 +39,7 @@ const navFunction = () => {
 
         // Create <a> element to nest within li
         const link = document.createElement('a');
-        link.href = "javascript: aboutFunction()";
+        //link.href = '#';
         link.textContent = navitems[i];
 
         // Nest <a> element within li element

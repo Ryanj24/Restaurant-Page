@@ -6,7 +6,12 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 a {
@@ -21,13 +26,16 @@ a:hover {
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(107, 107, 248);
+    /*
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 50%;*/
+    position: relative;
+    top: 100px;
 }
 
 .navbar {
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +65,7 @@ a:hover {
 }
 
 
-.main-container {
+.home-main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,12 +77,12 @@ a:hover {
     height: fit-content;
 }
 
-.main-container > h1 {
+.home-main-container > h1 {
     font-size: 70px;
     margin-bottom: 20px;
 }
 
-.main-container > p {
+.home-main-container > p {
     font-size: 45px;
     font-style: italic;
 }

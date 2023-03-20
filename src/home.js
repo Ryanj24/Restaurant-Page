@@ -12,11 +12,14 @@ const homeFunction = () => {
 
     // Get the content container from the HTML page & set the background image
     const content = document.getElementById('content');
-    content.style.backgroundImage = `url(${bgImg})`;
+
+    document.body.style.backgroundImage = `url(${bgImg})`;
+    
+    //content.style.backgroundImage = `url(${bgImg})`;
 
     // Create a div to hold the slogan
     const mainContainer = document.createElement('div');
-    mainContainer.classList.add('main-container');
+    mainContainer.classList.add('home-main-container');
 
     // Add slogan to the div created
     const slogan = document.createElement('p');
