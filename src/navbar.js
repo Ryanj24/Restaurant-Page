@@ -17,7 +17,7 @@ const navFunction = () => {
 
     // Create the logo element containing restaurant name
     const logo = document.createElement('h1');
-    logo.textContent = 'Lean Cuisine';
+    logo.textContent = 'Elite Cuisine';
 
     // Add logo to the container
     container.appendChild(logo);
