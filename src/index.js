@@ -1,5 +1,5 @@
-import { homeFunction } from './home.js'
-//import { navFunction } from './navbar.js';
+import { homeFunction } from './home.js';
+
+
 
 homeFunction();
-//navFunction();

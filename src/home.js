@@ -1,11 +1,14 @@
 import './styles/index.css'
 import bgImg from './assets/images/main-bg.jpg'
 import { navFunction } from './navbar.js'
+import { clearFunction } from './clearFunction.js'
 
 const homeFunction = () => {
     
     // Call navFunction to set the navbar at the top of the page
     navFunction();
+
+    clearFunction();
 
     // Get the content container from the HTML page & set the background image
     const content = document.getElementById('content');

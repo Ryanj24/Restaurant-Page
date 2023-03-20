@@ -1,4 +1,8 @@
 import './styles/index.css'
+import { homeFunction } from './home.js';
+import { aboutFunction } from './about.js';
+import { menuFunction } from './menu.js';
+import { contactFunction } from './contact.js';
 
 const navFunction = () => {
 
@@ -9,6 +13,8 @@ const navFunction = () => {
     const container = document.createElement('div');
     container.classList.add('navbar');
 
+    document.body.insertBefore(container, document.body.firstChild);
+
     // Create the logo element containing restaurant name
     const logo = document.createElement('h1');
     logo.textContent = 'Lean Cuisine';
@@ -18,6 +24,7 @@ const navFunction = () => {
 
     // Create array of the links to different pages
     let navitems = ['Home', 'About', 'Menu', "Contact"];
+    let pageFunctions = ['homeFunction()', 'aboutFunction()', 'menuFunction()', 'contactFunction()'];
 
     // Create the ul element that will house the nav links
     const navlist = document.createElement('ul');
@@ -32,7 +39,7 @@ const navFunction = () => {
 
         // Create <a> element to nest within li
         const link = document.createElement('a');
-        link.href = '#';
+        link.href = "javascript: aboutFunction()";
         link.textContent = navitems[i];
 
         // Nest <a> element within li element
@@ -44,7 +51,7 @@ const navFunction = () => {
 
     // Append ul to the container and then append the container to the DOM
     container.appendChild(navlist);
-    content.appendChild(container);
+    //content.appendChild(container);
 
 };
 
