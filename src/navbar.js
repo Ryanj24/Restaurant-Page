@@ -24,7 +24,7 @@ const navFunction = () => {
 
     // Create array of the links to different pages
     let navitems = ['Home', 'About', 'Menu', "Contact"];
-    let list = ['home', 'about', 'menu', 'contact'];
+    let list = ["home", "about", "menu", "contact"];
 
     // Create the ul element that will house the nav links
     const navlist = document.createElement('ul');
@@ -37,10 +37,10 @@ const navFunction = () => {
         const listItem = document.createElement('li');
         listItem.classList.add('nav-link');
 
-        // Create <a> element to nest within li
-        const link = document.createElement('a');
-        //link.href = '#';
+        // Create buttons to serve as nav links
+        const link = document.createElement('button');
         link.textContent = navitems[i];
+        link.classList.add(`${list[i]}` + "-button");
 
         // Nest <a> element within li element
         listItem.appendChild(link);
@@ -49,10 +49,23 @@ const navFunction = () => {
         navlist.appendChild(listItem);
     }
 
+
+
     // Append ul to the container and then append the container to the DOM
     container.appendChild(navlist);
-    //content.appendChild(container);
 
+    const homeButton = document.querySelector('.home-button');
+    const aboutButton = document.querySelector('.about-button');
+    const menuButton = document.querySelector('.menu-button');
+    const contactButton = document.querySelector('.contact-button');
+
+    homeButton.addEventListener("click", homeFunction);
+    aboutButton.addEventListener("click", aboutFunction);
+    menuButton.addEventListener("click", menuFunction);
+    contactButton.addEventListener("click", contactFunction);
+    
 };
+
+
 
 export { navFunction };

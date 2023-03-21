@@ -1,7 +1,5 @@
 import { homeFunction } from './home.js';
-import { aboutFunction } from './about.js';
-import { menuFunction } from './menu.js';
+import bgImg from './assets/images/main-bg.jpg';
 
-//homeFunction();
-//aboutFunction();
-menuFunction();
+document.body.style.backgroundImage = `url(${bgImg})`;
+homeFunction();

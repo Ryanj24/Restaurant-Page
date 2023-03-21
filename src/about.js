@@ -1,7 +1,6 @@
 import './styles/index.css'
 import { navFunction } from './navbar.js'
 import { clearFunction } from './clearFunction.js'
-import bgImg from './assets/images/main-bg.jpg';
 import exteriorPicture from './assets/images/exterior.jpg';
 import hands from './assets/images/chefHands.jpg';
 
@@ -12,9 +11,6 @@ const aboutFunction = () => {
 
     // Clear any previous content on the page to load the about page content
     clearFunction();
-
-    // Set background
-    document.body.style.backgroundImage = `url(${bgImg})`;
 
     // Get the content div from the DOM
     const content = document.getElementById('content');

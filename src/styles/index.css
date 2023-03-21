@@ -8,28 +8,22 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
-a {
-    text-decoration: none;
-}
 
-a:hover {
+button:hover {
     cursor: pointer;
 }
 
 #content {
     display: flex;
     justify-content: center;
-    /*background-color: red;*/
-    /*
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;*/
+    flex-direction: column;
+    align-items: center;
     position: relative;
     top: 100px;
     padding: 20px;
@@ -56,6 +50,13 @@ a:hover {
     justify-content: center;
     list-style: none;
     font-size: 25px;
+}
+
+.navbar > ul > li > button {
+    padding: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
 }
 
 .navbar > ul > li:first-child {
@@ -93,7 +94,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*background-color: aqua;*/
     width: 100%;
     padding: 20px;
     height: fit-content;
@@ -111,6 +111,7 @@ a:hover {
     width: 100%;
     background-color: rgba(22, 21, 21, 0.6);
     padding: 30px 0;
+    border-radius: 15px;
 }
 
 .about-main-container .info-section .group1 {
@@ -160,10 +161,15 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aqua;
     padding: 20px;
     border-radius: 15px;
     background-color: rgba(22, 21, 21, 0.6);
+    margin-bottom: 50px;
+}
+
+.drinks-container .items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .drinks-container .item-div {
@@ -187,6 +193,92 @@ a:hover {
 
 
 .drinks-container .item-div .item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    font-size: 30px;
+}
+
+.mains-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(22, 21, 21, 0.6);
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.mains-container .items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mains-container .item-div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.mains-container .item-div .img-container {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 250px;
+}
+
+.mains-container .item-div .img-container img{
+    height: 100%;
+    width: 80%;
+}
+
+
+.mains-container .item-div .item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    font-size: 30px;
+}
+
+.desserts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(22, 21, 21, 0.6);
+}
+
+.desserts-container .items-container {
+    display: flex;
+}
+
+.desserts-container .item-div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.desserts-container .item-div .img-container {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 250px;
+}
+
+.desserts-container .item-div .img-container img{
+    height: 100%;
+    width: 80%;
+}
+
+
+.desserts-container .item-div .item-info {
     display: flex;
     flex-direction: column;
     align-items: center;
