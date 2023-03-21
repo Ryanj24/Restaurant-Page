@@ -1,5 +1,4 @@
 import './styles/index.css'
-import { navFunction } from './navbar.js'
 import { clearFunction } from './clearFunction.js'
 import exteriorPicture from './assets/images/exterior.jpg';
 import hands from './assets/images/chefHands.jpg';

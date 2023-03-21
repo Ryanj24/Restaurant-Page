@@ -1,5 +1,4 @@
 import './styles/index.css'
-import { navFunction } from './navbar.js'
 import { clearFunction } from './clearFunction.js'
 import beer from './assets/images/beer.jpg';
 import coke from './assets/images/coca-cola.jpg';
