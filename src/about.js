@@ -6,8 +6,6 @@ import hands from './assets/images/chefHands.jpg';
 
 const aboutFunction = () => {
 
-    // Set the navbar at the top of the page
-    navFunction();
 
     // Clear any previous content on the page to load the about page content
     clearFunction();

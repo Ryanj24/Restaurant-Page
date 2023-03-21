@@ -14,7 +14,6 @@ import iceCream from './assets/images/ice-cream.jpg';
 
 const menuFunction = () => {
 
-    navFunction();
     clearFunction();
 
     addDrinks();
